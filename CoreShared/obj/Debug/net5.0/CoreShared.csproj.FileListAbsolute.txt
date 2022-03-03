@@ -1,0 +1,12 @@
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\bin\Debug\net5.0\CoreShared.deps.json
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\bin\Debug\net5.0\CoreShared.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\bin\Debug\net5.0\ref\CoreShared.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\bin\Debug\net5.0\CoreShared.pdb
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.csproj.AssemblyReference.cache
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.AssemblyInfoInputs.cache
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.AssemblyInfo.cs
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.csproj.CoreCompileInputs.cache
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\ref\CoreShared.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.pdb

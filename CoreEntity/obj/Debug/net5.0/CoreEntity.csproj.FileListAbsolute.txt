@@ -1,0 +1,15 @@
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\bin\Debug\net5.0\CoreEntity.deps.json
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\bin\Debug\net5.0\CoreEntity.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\bin\Debug\net5.0\ref\CoreEntity.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\bin\Debug\net5.0\CoreEntity.pdb
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\bin\Debug\net5.0\CoreShared.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\bin\Debug\net5.0\CoreShared.pdb
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.csproj.AssemblyReference.cache
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.AssemblyInfoInputs.cache
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.AssemblyInfo.cs
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.csproj.CoreCompileInputs.cache
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.csproj.CopyComplete
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\ref\CoreEntity.dll
+C:\Users\ikrnf\source\repos\CoreProject\CoreEntity\obj\Debug\net5.0\CoreEntity.pdb
