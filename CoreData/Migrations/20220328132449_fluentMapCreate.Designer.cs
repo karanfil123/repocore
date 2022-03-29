@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoreData.Migrations
 {
     [DbContext(typeof(CoreContext))]
-    [Migration("20220303211803_mg")]
-    partial class mg
+    [Migration("20220328132449_fluentMapCreate")]
+    partial class fluentMapCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,20 +32,45 @@ namespace CoreData.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
 
                     b.HasKey("ID");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 250, DateTimeKind.Local).AddTicks(7363),
+                            CreateName = "Bülent",
+                            Description = "Kategori açıklası",
+                            IsActive = true,
+                            Name = "Teknoloji"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 251, DateTimeKind.Local).AddTicks(4485),
+                            CreateName = "Bülent",
+                            Description = "Telefon açıklası",
+                            IsActive = true,
+                            Name = "Telefon"
+                        });
                 });
 
             modelBuilder.Entity("CoreEntity.Concrete.Customer", b =>
@@ -59,25 +84,37 @@ namespace CoreData.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<int>("RoleID")
                         .HasColumnType("int");
@@ -87,6 +124,34 @@ namespace CoreData.Migrations
                     b.HasIndex("RoleID");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 253, DateTimeKind.Local).AddTicks(2568),
+                            CreateName = "Admin",
+                            Email = "ayl@gmail.com",
+                            FirstName = "Aylin",
+                            ImageUrl = "asd.jpg",
+                            IsActive = true,
+                            LastName = "Kırnmızı",
+                            Password = "123",
+                            RoleID = 1
+                        },
+                        new
+                        {
+                            ID = 2,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 253, DateTimeKind.Local).AddTicks(3657),
+                            CreateName = "Admin",
+                            Email = "mehmet@gmail.com",
+                            FirstName = "Mehmet",
+                            ImageUrl = "asdqwerty.jpg",
+                            IsActive = true,
+                            LastName = "Yeşil",
+                            Password = "123",
+                            RoleID = 2
+                        });
                 });
 
             modelBuilder.Entity("CoreEntity.Concrete.Product", b =>
@@ -103,19 +168,25 @@ namespace CoreData.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("CustomerID")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -130,6 +201,34 @@ namespace CoreData.Migrations
                     b.HasIndex("CustomerID");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            CategoryID = 1,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 254, DateTimeKind.Local).AddTicks(7064),
+                            CreateName = "Admin",
+                            CustomerID = 1,
+                            Description = "İphone 13 tüm özellikleri",
+                            IsActive = true,
+                            Name = "İphone13",
+                            Price = 19000m,
+                            Stock = 1000
+                        },
+                        new
+                        {
+                            ID = 2,
+                            CategoryID = 2,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 254, DateTimeKind.Local).AddTicks(7086),
+                            CreateName = "Admin",
+                            CustomerID = 2,
+                            Description = "S20 tüm özellikleri",
+                            IsActive = true,
+                            Name = "Samsung S20",
+                            Price = 12000m,
+                            Stock = 100
+                        });
                 });
 
             modelBuilder.Entity("CoreEntity.Concrete.Role", b =>
@@ -143,10 +242,14 @@ namespace CoreData.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreateName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("CustomerType")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -154,6 +257,24 @@ namespace CoreData.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 255, DateTimeKind.Local).AddTicks(4866),
+                            CreateName = "Admin",
+                            CustomerType = "User",
+                            IsActive = true
+                        },
+                        new
+                        {
+                            ID = 2,
+                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 255, DateTimeKind.Local).AddTicks(5160),
+                            CreateName = "Admin",
+                            CustomerType = "Admin",
+                            IsActive = true
+                        });
                 });
 
             modelBuilder.Entity("CoreEntity.Concrete.Customer", b =>

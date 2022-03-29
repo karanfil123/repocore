@@ -1,4 +1,5 @@
-﻿using CoreEntity.Concrete;
+﻿using CoreData.FluentMap;
+using CoreEntity.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,11 +17,14 @@ namespace CoreData.Concrete.Contexts
         public DbSet<Role> Roles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=ISMAIL; database=CoreDb; Trusted_Connection=True;Connect Timeout=30; MultipleActiveResultSets=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb; database=DenemeProjectDb; integrated security=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration(new CategoryMap());
+            modelBuilder.ApplyConfiguration(new CustomerMap());
+            modelBuilder.ApplyConfiguration(new ProductMap());
+            modelBuilder.ApplyConfiguration(new RoleMap());
         }
     }
 }

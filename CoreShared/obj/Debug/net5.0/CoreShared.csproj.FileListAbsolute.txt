@@ -10,3 +10,15 @@ C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.c
 C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.dll
 C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\ref\CoreShared.dll
 C:\Users\ikrnf\source\repos\CoreProject\CoreShared\obj\Debug\net5.0\CoreShared.pdb
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\bin\Debug\net5.0\CoreShared.deps.json
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\bin\Debug\net5.0\CoreShared.dll
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\bin\Debug\net5.0\ref\CoreShared.dll
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\bin\Debug\net5.0\CoreShared.pdb
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.csproj.AssemblyReference.cache
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.AssemblyInfoInputs.cache
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.AssemblyInfo.cs
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.csproj.CoreCompileInputs.cache
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.dll
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\ref\CoreShared.dll
+C:\Users\bulent.karanfi̇l\Source\Repos\repocore\CoreShared\obj\Debug\net5.0\CoreShared.pdb

@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
       <PrivateAssets>all</PrivateAssets>
@@ -24,6 +20,10 @@
   <ItemGroup>
     <ProjectReference Include="..\CoreEntity\CoreEntity.csproj" />
     <ProjectReference Include="..\CoreShared\CoreShared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Concrete\Repositories\" />
   </ItemGroup>
 
 </Project>
