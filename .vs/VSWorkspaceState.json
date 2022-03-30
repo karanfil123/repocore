@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CoreData"
+    "\\CoreData",
+    "\\CoreData\\Abstract",
+    "\\CoreData\\Concrete",
+    "\\CoreData\\Concrete\\Repositories"
   ],
-  "SelectedNode": "\\CoreProject.sln",
+  "SelectedNode": "\\CoreData\\Concrete\\Repositories\\GenericDal.cs",
   "PreviewInSolutionExplorer": false
 }

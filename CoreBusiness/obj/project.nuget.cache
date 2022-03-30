@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nIrrEqVk2amXqic3KdZ8IlbGu6RpWW0cOUqzEgn6IdWPb6KRDb6jrdRhgkvT+Bf5/KvnYlrYhmKoyYI8A7mNVg==",
+  "dgSpecHash": "nDUEeqcJFVCGcyXWGjiLY6JYvqVLxxKdVTyH9qQqJInYgGMwr54bc6HRPqkwgjlO7TWyVgnwJFxitIdKs8pSQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bulent.karanfi̇l\\source\\repos\\repocore\\CoreBusiness\\CoreBusiness.csproj",
+  "projectFilePath": "C:\\Users\\bulent.karanfi̇l\\Source\\Repos\\repocore\\CoreBusiness\\CoreBusiness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bulent.karanfi̇l\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\bulent.karanfi̇l\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

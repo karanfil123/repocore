@@ -22,8 +22,4 @@
     <ProjectReference Include="..\CoreShared\CoreShared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Concrete\Repositories\" />
-  </ItemGroup>
-
 </Project>

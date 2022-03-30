@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c1cYRY7XVfRHDkpYXVSVlL4MwlCrammkLuCpMczojNf5YtrvrpNQ3KPqtQjq7KNwkXhVR73WfgOy7N42V+Bd0g==",
+  "dgSpecHash": "A6FXh16S/UbIZsxESTLFuf7iW9jSfv8Tn5aXQbB3LhMlBli+sM6pUO6EIiXEwYiTsGzsVdsW0nOgi6xe+8Yg5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bulent.karanfi̇l\\source\\repos\\repocore\\CoreData\\CoreData.csproj",
+  "projectFilePath": "C:\\Users\\bulent.karanfi̇l\\Source\\Repos\\repocore\\CoreData\\CoreData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bulent.karanfi̇l\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bulent.karanfi̇l\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

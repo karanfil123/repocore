@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace CoreData.Abstract
 {
-    public interface IGenericDal<T> where T:class,new()
+    public interface IGenericDal<T> where T:class
     {
         void Add(T entity);
         void Delete(T entity);
         void Update(T entity);
-        List<T> Get(Expression<Func<T, bool>> predicate);
-        List<T> GetAll(Expression<Func<T, bool>> predicate=null);
+        T Get(Expression<Func<T, bool>> predicate ,params Expression<Func<T,object>>[] property);
+        IList<T> GetAll(Expression<Func<T, bool>> predicate=null, params Expression<Func<T, object>>[] property);
         
     }
 }
