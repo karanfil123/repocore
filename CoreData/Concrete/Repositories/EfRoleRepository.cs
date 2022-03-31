@@ -1,5 +1,7 @@
 ﻿using CoreData.Abstract;
 using CoreEntity.Concrete;
+using CoreShared.Data.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +10,11 @@ using System.Threading.Tasks;
 
 namespace CoreData.Concrete.Repositories
 {
-    public class CategoryDal:GenericDal<Category>,ICategoryDal
+    public class EfRoleRepository:GenericRepository<Role>,IRoleRepository
     {
+        public EfRoleRepository(DbContext context):base(context)
+        {
+
+        }
     }
 }

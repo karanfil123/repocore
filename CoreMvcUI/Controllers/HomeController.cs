@@ -1,4 +1,5 @@
-﻿using CoreMvcUI.Models;
+﻿using CoreBusiness.Abstract;
+using CoreMvcUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,6 +13,7 @@ namespace CoreMvcUI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        
 
         public HomeController(ILogger<HomeController> logger)
         {

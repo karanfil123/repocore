@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\**" />
-    <EmbeddedResource Remove="Data\**" />
-    <None Remove="Data\**" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
   </ItemGroup>
 
 </Project>
