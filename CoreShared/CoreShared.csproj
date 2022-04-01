@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Abstract\" />
+    <Folder Include="Data\Concrete\" />
+  </ItemGroup>
+
 </Project>

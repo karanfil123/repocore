@@ -9,11 +9,11 @@ namespace CoreBusiness.Abstract
 {
     public interface IProductService
     {
-        Task<Product> GetId(int productId);
-        Task<IList<Product>> GetAll();
-        Task<IList<Product>> GetAllIsActive();
-        Task Add(Product product);
-        Task Delete(Product product);
-        Task Update(Product product);
+        Product GetId(int productId);
+        IList<Product> GetAll();
+        IList<Product> GetAllIsActive();
+        void Add(Product product);
+        void Delete(Product product);
+        void Update(Product product);
     }
 }

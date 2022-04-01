@@ -1,8 +1,32 @@
-﻿@{
+﻿@using CoreEntity.Concrete
+@model List<Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Adı</th>
+            <th>Adı</th>
+            <th>Adı</th>
+            <th>Adı</th>
+
+
+        </tr>
+        @foreach (var item in Model)
+        {
+
+
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.ID</td>
+                <td>@item.Price</td>
+                <td>@item.Stock</td>
+                <td><button class="btn btn-danger">Sil</button> </td>
+                <td> <button class="btn btn-success">Ekle</button></td>
+            </tr>
+        }
+    </table>
 </div>

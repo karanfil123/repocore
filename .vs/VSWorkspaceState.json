@@ -1,11 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CoreBusiness",
+    "\\CoreBusiness\\Abstract",
     "\\CoreData",
-    "\\CoreData\\Abstract",
     "\\CoreData\\Concrete",
-    "\\CoreData\\Concrete\\Repositories"
+    "\\CoreData\\Concrete\\Repositories",
+    "\\CoreMvcUI",
+    "\\CoreMvcUI\\Controllers",
+    "\\CoreShared"
   ],
-  "SelectedNode": "\\CoreData\\Concrete\\Repositories\\GenericDal.cs",
+  "SelectedNode": "\\CoreMvcUI\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

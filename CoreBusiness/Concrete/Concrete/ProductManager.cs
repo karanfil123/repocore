@@ -18,34 +18,33 @@ namespace CoreBusiness.Concrete.Concrete
             this.productRepository = productRepository;
         }
 
-        public async Task Add(Product product)
+        public void Add(Product product)
         {
-            await productRepository.AddAsync(product);
+             productRepository.Add(product);
         }
 
-        public async Task Delete(Product product)
+        public void Delete(Product product)
         {
-            await productRepository.DeleteAsync(product);
+             productRepository.Delete(product);
         }
 
-        public async Task<IList<Product>> GetAll()
+        public IList<Product> GetAll()
         {
-            return await productRepository.GetAllAsync();
+            return  productRepository.GetAll();
         }
 
-        public async Task<IList<Product>> GetAllIsActive()
+        public  IList<Product> GetAllIsActive()
         {
-            return await productRepository.GetAllAsync(x => x.IsActive);
+            return  productRepository.GetAll(x => x.IsActive);
         }
 
-        public async Task<Product> GetId(int productId)
+        public Product GetId(int productId)
         {
-            return await productRepository.GetAsync(x => x.ID == productId);
+            return  productRepository.Get(x => x.ID == productId);
         }
-
-        public async Task Update(Product product)
+        public void Update(Product product)
         {
-            await productRepository.UpdateAsync(product);
+             productRepository.Update(product);
         }
     }
 }

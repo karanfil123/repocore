@@ -1,5 +1,4 @@
 ﻿using CoreEntity.Concrete;
-using CoreShared.Data.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;

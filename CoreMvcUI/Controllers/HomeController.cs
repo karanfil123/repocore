@@ -1,11 +1,9 @@
-﻿using CoreBusiness.Abstract;
+﻿using CoreBusiness.Concrete.Concrete;
+using CoreData.Concrete.Repositories;
 using CoreMvcUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace CoreMvcUI.Controllers
@@ -13,16 +11,16 @@ namespace CoreMvcUI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        
-
+        ProductManager pm = new ProductManager(new EfProductRepository());
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public  IActionResult Index()
         {
-            return View();
+            var val = pm.GetAll();
+            return View(val);
         }
 
         public IActionResult Privacy()
