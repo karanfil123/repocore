@@ -15,9 +15,10 @@ namespace CoreData.Concrete.Contexts
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<NewsLetter> NewsLetters { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb; database=DenemeProjectDb; integrated security=true");
+            optionsBuilder.UseSqlServer("Server=ISMAIL; database=DenemeProjectDb; integrated security=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,6 +26,7 @@ namespace CoreData.Concrete.Contexts
             modelBuilder.ApplyConfiguration(new CustomerMap());
             modelBuilder.ApplyConfiguration(new ProductMap());
             modelBuilder.ApplyConfiguration(new RoleMap());
+            modelBuilder.ApplyConfiguration(new NewsLetterMap());
         }
     }
 }

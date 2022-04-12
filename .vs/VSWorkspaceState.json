@@ -1,15 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CoreBusiness",
-    "\\CoreBusiness\\Abstract",
-    "\\CoreData",
-    "\\CoreData\\Concrete",
-    "\\CoreData\\Concrete\\Repositories",
     "\\CoreMvcUI",
-    "\\CoreMvcUI\\Controllers",
-    "\\CoreShared"
+    "\\CoreMvcUI\\Views",
+    "\\CoreMvcUI\\Views\\Home",
+    "\\CoreMvcUI\\Views\\Newsletter"
   ],
-  "SelectedNode": "\\CoreShared",
+  "SelectedNode": "\\CoreMvcUI\\Views\\Newsletter\\NewsletterAddPartial.cshtml",
   "PreviewInSolutionExplorer": false
 }

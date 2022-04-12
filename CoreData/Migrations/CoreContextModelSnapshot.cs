@@ -54,7 +54,7 @@ namespace CoreData.Migrations
                         new
                         {
                             ID = 1,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 250, DateTimeKind.Local).AddTicks(7363),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 835, DateTimeKind.Local).AddTicks(9666),
                             CreateName = "Bülent",
                             Description = "Kategori açıklası",
                             IsActive = true,
@@ -63,7 +63,7 @@ namespace CoreData.Migrations
                         new
                         {
                             ID = 2,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 251, DateTimeKind.Local).AddTicks(4485),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 836, DateTimeKind.Local).AddTicks(1601),
                             CreateName = "Bülent",
                             Description = "Telefon açıklası",
                             IsActive = true,
@@ -127,7 +127,7 @@ namespace CoreData.Migrations
                         new
                         {
                             ID = 1,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 253, DateTimeKind.Local).AddTicks(2568),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 839, DateTimeKind.Local).AddTicks(5560),
                             CreateName = "Admin",
                             Email = "ayl@gmail.com",
                             FirstName = "Aylin",
@@ -140,7 +140,7 @@ namespace CoreData.Migrations
                         new
                         {
                             ID = 2,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 253, DateTimeKind.Local).AddTicks(3657),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 840, DateTimeKind.Local).AddTicks(2353),
                             CreateName = "Admin",
                             Email = "mehmet@gmail.com",
                             FirstName = "Mehmet",
@@ -150,6 +150,34 @@ namespace CoreData.Migrations
                             Password = "123",
                             RoleID = 2
                         });
+                });
+
+            modelBuilder.Entity("CoreEntity.Concrete.NewsLetter", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Mail")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("NewsLetters");
                 });
 
             modelBuilder.Entity("CoreEntity.Concrete.Product", b =>
@@ -205,7 +233,7 @@ namespace CoreData.Migrations
                         {
                             ID = 1,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 254, DateTimeKind.Local).AddTicks(7064),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 844, DateTimeKind.Local).AddTicks(7407),
                             CreateName = "Admin",
                             CustomerID = 1,
                             Description = "İphone 13 tüm özellikleri",
@@ -218,7 +246,7 @@ namespace CoreData.Migrations
                         {
                             ID = 2,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 254, DateTimeKind.Local).AddTicks(7086),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 844, DateTimeKind.Local).AddTicks(7458),
                             CreateName = "Admin",
                             CustomerID = 2,
                             Description = "S20 tüm özellikleri",
@@ -260,7 +288,7 @@ namespace CoreData.Migrations
                         new
                         {
                             ID = 1,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 255, DateTimeKind.Local).AddTicks(4866),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 846, DateTimeKind.Local).AddTicks(5301),
                             CreateName = "Admin",
                             CustomerType = "User",
                             IsActive = true
@@ -268,7 +296,7 @@ namespace CoreData.Migrations
                         new
                         {
                             ID = 2,
-                            CreateDate = new DateTime(2022, 3, 28, 16, 24, 49, 255, DateTimeKind.Local).AddTicks(5160),
+                            CreateDate = new DateTime(2022, 4, 2, 14, 4, 32, 846, DateTimeKind.Local).AddTicks(5824),
                             CreateName = "Admin",
                             CustomerType = "Admin",
                             IsActive = true
